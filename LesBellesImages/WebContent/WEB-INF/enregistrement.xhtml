@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+
+<ui:composition template="WEB-INF/modeles/modeles.xhtml">
+<ui:define name="content">
+<h:form>
+<h2>Bonjour, merci d'entrer les informations demandées</h2>
+<h:panelGrid columns="2">
+<h:outputText value="Nom :"></h:outputText>
+<h:inputText id="nom" value="#{loginBean.client.nom}">
+</h:inputText>
+<h:outputText value="Prénom :">
+</h:outputText>
+<h:inputText id="prenom" value="#{loginBean.client.prenom}">
+
+
+
+</h:inputText>
+<h:outputText value="Mot de passe choisi:" >
+</h:outputText>
+<h:inputSecret id="passe" value="#{loginBean.client.motdepasse}">
+</h:inputSecret>
+<h:outputText value="Votre âge:" >
+</h:outputText>
+<h:inputText value="#{loginBean.client.age}">
+</h:inputText>
+</h:panelGrid>
+<br/>
+<h:commandButton value="Enregistrez-vous"
+action="#{loginBean.enregistrerClient}">
+</h:commandButton>
+</h:form>
+</ui:define>
+</ui:composition>
+</html>
