@@ -48,7 +48,18 @@ public class RendezVous {
 	public void setContact(String Contact) {
 		this.Contact = Contact;
 
-
+/*
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ */
 
 	}
 	public String getObjet() {
