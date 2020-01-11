@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.GridPane?>
+
+<GridPane layoutX="30.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vue.Controleur">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="137.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="623.0" minWidth="10.0" prefWidth="623.0" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints minHeight="10.0" percentHeight="0.0" prefHeight="50.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <TextField maxHeight="25.0" maxWidth="83.0" prefHeight="25.0" prefWidth="83.0" promptText="Prénom:" GridPane.rowIndex="1" />
+      <TextField maxWidth="65.0" minHeight="20.0" minWidth="14.0" prefHeight="25.0" prefWidth="65.0" promptText="Nom:" />
+      <Button layoutX="150.0" layoutY="20.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="95.0" text="OK" GridPane.rowIndex="2" />
+      <Button layoutX="12.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="94.0" text="Annuler" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <Button mnemonicParsing="false" text="Voir tous les invités" GridPane.rowIndex="10" />
+      <Button layoutX="300.0" mnemonicParsing="false" text="Supprimer un invité" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+      <ListView fx:id="invites" prefHeight="200.0" prefWidth="200.0" GridPane.columnSpan="2" GridPane.rowIndex="4" GridPane.rowSpan="6" />
+      <TextField fx:id="nom" GridPane.columnIndex="1" />
+      <TextField fx:id="prenom" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+   </children>
+</GridPane>

@@ -1,0 +1,23 @@
+package chapitre8;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileOutputStream;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class BufferedInputStream {
+	public static void main(String[] args) throws IOException {
+	BufferedInputReader inputbyte ;
+	BufferedOuputWriter outputbyte ;
+	try {
+	inputbyte = BufferedInputStream(new FileOutputStream("fichierdatain"));
+	outputbyte = BufferedOutputStream(new FileOutputStream("fichierdataout"));
+	}
+	BufferedReader inputStream ;
+	BufferedWriter outputStream ;
+	inputStream = new BufferedReader(new FileReader("xanadu.txt"));
+	outputStream = new BufferedWriter(new FileWriter("characteroutput.txt"));
+
+}

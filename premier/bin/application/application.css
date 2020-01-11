@@ -1,0 +1,65 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.root {
+-fx-background-image: url("fond.jpg");
+}
+.label {
+-fx-font-size: 14px;
+-fx-font-weight: bold;
+-fx-text-fill: #333333;
+-fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+}
+#questions {
+-fx-background-color: red, blue ;
+-fx-background-insets: 0,3;
+-fx-background-radius: 3,30;
+-fx-padding: 5 30 5 30;
+-fx-text-fill: black;
+-fx-font-size: 14px;
+}
+#questions:focused {
+-fx-background-color: red, blue;
+-fx-background-insets: 0,6;
+-fx-background-radius: 3,40;
+
+
+
+}
+.button {
+-fx-text-fill: grey;
+-fx-font-size: 14px;
+-fx-font-family: "Arial Narrow";
+-fx-font-weight: bold;
+-fx-background-color: linear-gradient(#DA5058, #8A5058);
+-fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+.button:hover{
+-fx-background-color: #AA5050;
+}
+.button:focused {
+-fx-background-color: -fx-faint-focus-color, -fx-focus-color, -fx-inner-border, -fx-body-color;
+-fx-background-insets: -2, -0.3, 1, 2;
+-fx-background-radius: 7, 6, 4, 3;
+}
+.button1 {
+-fx-text-fill: white;
+-fx-font-size: 14px;
+-fx-font-family: "Arial Narrow";
+-fx-font-weight: bold;
+-fx-background-color: linear-gradient(#61a2b1, #2A5058);
+-fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+.button1:hover{
+-fx-background-color: #395bae;
+}
+#bienvenue {
+-fx-font-size: 32px;
+-fx-font-family: "Arial Black";
+-fx-fill: #818181;
+-fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
+}
+#message {
+-fx-fill: FIREBRICK;
+-fx-font-weight: bold;
+-fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+}

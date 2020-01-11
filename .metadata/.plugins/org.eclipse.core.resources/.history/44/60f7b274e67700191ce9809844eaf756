@@ -1,0 +1,27 @@
+import java.util.ArrayList;
+import java.util.List;
+
+
+public class Fonction {
+	
+	// dans une méthode main
+		 // création d'une liste
+		List<Taille> liste =  new ArrayList<Integer>() ;
+		
+		liste.add("1") ;
+		liste.add("deux") ;
+		liste.add("trois") ;
+		
+		
+		
+	public void  partition( int taille, T liste) {
+			
+			for (Integer liste1 : liste) {
+				
+			}
+			
+			return null;
+			
+		
+}
+}

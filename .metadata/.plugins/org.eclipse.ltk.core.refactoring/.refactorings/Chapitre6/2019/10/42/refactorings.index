@@ -1,0 +1,24 @@
+1571140828258	Encapsulate field 'leCourrier'
+1571140835538	Encapsulate field 'occupees'
+1571140839337	Encapsulate field 'places'
+1571144012441	Encapsulate field 'nombreAbonnes'
+1571234639079	Delete element
+1571234691071	Extract interface 'Animal'
+1571234761580	Delete element
+1571234771025	Delete element
+1571234782916	Delete element
+1571234931466	Delete element
+1571235110110	Delete element
+1571251750431	Delete element
+1571409272588	Encapsulate field 'lesServices'
+1571410420359	Encapsulate field 'motDePasse'
+1571416403321	Delete element
+1571416522139	Move package
+1571416549510	Move package
+1571416566354	Move compilation unit
+1571416581443	Move package
+1571416786887	Move compilation unit
+1571416875471	Move compilation unit
+1571416927249	Move compilation unit
+1571416932747	Delete element
+1571416936784	Delete element

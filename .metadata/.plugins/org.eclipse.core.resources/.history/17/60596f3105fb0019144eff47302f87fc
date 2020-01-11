@@ -1,0 +1,31 @@
+package chapitre8;
+
+import java.io.FileInputStream;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class CopyTwoFilesInSameTime {
+
+	
+	public static void main(String[] args) throws IOException {
+		FileWriter filewriter;
+		FileReader filereader;
+		try {
+	     if (filewriter)
+		}
+		} finally {
+		if (inputStream != null) {
+		inputStream.close();
+		}
+		if (outputStream != null) {
+		outputStream.close();
+		}
+		}
+		}
+		}
+	
+	
+	
+	}
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;application.ListView.java&apos; to &apos;ListViewExemple.java&apos;&#x0D;&#x0A;- Original project: &apos;premier&apos;&#x0D;&#x0A;- Original element: &apos;application.ListView.java&apos;&#x0D;&#x0A;- Renamed element: &apos;application.ListViewExemple.java&apos;" description="Rename compilation unit &apos;ListView.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;application{ListView.java" name="ListViewExemple.java" references="false" stamp="1573133291706" version="1.0"/>
+</session>
