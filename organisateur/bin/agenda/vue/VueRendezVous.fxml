@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.GridPane?>
+
+<GridPane hgap="10.0" prefHeight="400.0" prefWidth="800.0" vgap="20.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="agenda.vue.VueControleur">
+	<padding>
+		<Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+	</padding>
+	<columnConstraints>
+		<ColumnConstraints />
+		<ColumnConstraints maxWidth="166.0" minWidth="136.0" prefWidth="136.0" />
+		<ColumnConstraints maxWidth="136.0" minWidth="93.0" prefWidth="94.0" />
+		<ColumnConstraints maxWidth="134.0" minWidth="83.0" prefWidth="83.0" />
+		<ColumnConstraints maxWidth="129.0" minWidth="92.0" prefWidth="92.0" />
+		<ColumnConstraints maxWidth="158.0" minWidth="10.0" prefWidth="158.0" />
+	</columnConstraints>
+	<rowConstraints>
+		<RowConstraints />
+		<RowConstraints />
+		<RowConstraints />
+		<RowConstraints />
+		<RowConstraints />
+		<RowConstraints />
+		<RowConstraints />
+		<RowConstraints />
+	</rowConstraints>
+	<children>
+		<TextField text="Date du RV:" />
+		<TextField text="Contact:" GridPane.rowIndex="1" />
+		<TextField text="Objet:" GridPane.rowIndex="2" />
+		<DatePicker fx:id="choixDate" GridPane.columnIndex="1" />
+		<TextField prefHeight="25.0" prefWidth="88.0" text="Heure(hh:mn)" GridPane.columnIndex="2" />
+		<Button mnemonicParsing="false" onAction="#handleAjouterRV" prefHeight="25.0" prefWidth="112.0" text="Enregistrer le RV" GridPane.rowIndex="3" />
+		<Button mnemonicParsing="false" onAction="#handleEffacerChamps" text="Effacer les champs" GridPane.rowIndex="4" />
+		<Button mnemonicParsing="false" onAction="#handleSupprimerRV" prefHeight="25.0" prefWidth="114.0" text="Supprimer le RV" GridPane.rowIndex="5" />
+		<Button mnemonicParsing="false" text="Trier les RV par date" GridPane.rowIndex="6" />
+		<Button mnemonicParsing="false" onAction="#sauverAgenda" prefHeight="25.0" prefWidth="124.0" text="Sauver l'agenda" GridPane.rowIndex="7" />
+		<CheckBox fx:id="confirmer" mnemonicParsing="false" prefHeight="17.0" prefWidth="101.0" text="A confirmer" GridPane.columnIndex="5" />
+		<TextField prefHeight="25.0" prefWidth="80.0" text="Téléphone:" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+		<CheckBox fx:id="transport" mnemonicParsing="false" text="Prevoir le transport" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+      <ComboBox fx:id="heure" prefWidth="150.0" GridPane.columnIndex="3" />
+      <ComboBox fx:id="minutes" prefWidth="150.0" GridPane.columnIndex="4" />
+      <TextField fx:id="objet" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <TextField fx:id="contact" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <TextField fx:id="telephone" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+      <ListView fx:id="liste" prefHeight="45.0" prefWidth="521.0" GridPane.columnIndex="1" GridPane.columnSpan="5" GridPane.rowIndex="3" GridPane.rowSpan="5" />
+	</children>
+</GridPane>
