@@ -7,48 +7,50 @@
 	xmlns:f="http://java.sun.com/jsf/core">
 
 <ui:composition template="WEB-INF/modeles/modeles.xhtml">
-<ui:define name="content">
-<h:form>
-<h2>Bonjour, merci d'entrer vos identifiants</h2>
-<h:panelGrid columns="3">
-<h:outputText value="Nom :"></h:outputText>
-<h:inputText id="nom" value="#{loginBean.client.nom}" required="true"
-requiredMessage="Votre nom!"
-validator="#{loginBean.interdireAdmin}">
+	<ui:define name="content">
+		<h:form>
+			<h2>Bonjour, merci d'entrer vos identifiants</h2>
+			<h:panelGrid columns="3">
+				<h:outputText value="Nom :"></h:outputText>
+				<h:inputText id="nom" value="#{loginBean.client.nom}"
+					required="true" requiredMessage="Votre nom!"
+					validator="#{loginBean.interdireAdmin}">
 >
 
 </h:inputText>
-<h:message for="nom"
-style="color:red;
+				<h:message for="nom"
+					style="color:red;
 font-family:'New Century Schoolbook',serif;
 font-style:oblique;
 text-decoration:underline">
 
-</h:message>
+				</h:message>
 
-<h:outputText value="Mot de passe :" >
-</h:outputText>
-<h:inputSecret id="passe" value="#{loginBean.client.motdepasse}"
-required="true" requiredMessage="Votre mot de passe!">
-</h:inputSecret>
-<h:message for="passe"></h:message>
-<h:outputText value="Code :">
-</h:outputText>
-<h:inputText id="code" value="#{loginBean.code}" required="true"
-requiredMessage="Votre code!"
-convertMessage="Le code est un entier"
-validatorMessage="Votre code doit être dans l'intervalle 1-10">
-<f:validateLongRange minimum="1" maximum="10"/>
-</h:inputText>
-<h:message for="code"></h:message>
-<h:commandButton value="Connexion" action="#{loginBean.validationClient}">
-</h:commandButton>
-</h:panelGrid>
-<br/> Des informations? cliquer <h:outputLink value="information.xhtml">sur ce
+				<h:outputText value="Mot de passe :">
+				</h:outputText>
+				<h:inputSecret id="passe" value="#{loginBean.client.motdepasse}"
+					required="true" requiredMessage="Votre mot de passe!">
+				</h:inputSecret>
+				<h:message for="passe"></h:message>
+				<h:outputText value="Code :">
+				</h:outputText>
+				<h:inputText id="code" value="#{loginBean.code}" required="true"
+					requiredMessage="Votre code!"
+					convertMessage="Le code est un entier"
+					validatorMessage="Votre code doit être dans l'intervalle 1-10">
+					<f:validateLongRange minimum="1" maximum="10" />
+				</h:inputText>
+				<h:message for="code"></h:message>
+				<h:commandButton value="Connexion"
+					action="#{loginBean.validationClient}">
+				</h:commandButton>
+			</h:panelGrid>
+			<br /> Des informations? cliquer <h:outputLink
+				value="information.xhtml">sur ce
 lien</h:outputLink>
 
 
-</h:form>
-</ui:define>
+		</h:form>
+	</ui:define>
 </ui:composition>
 </html>

@@ -12,22 +12,35 @@
 <h2>Bonjour, merci d'entrer les informations demandées</h2>
 <h:panelGrid columns="2">
 <h:outputText value="Nom :"></h:outputText>
-<h:inputText id="nom" value="#{loginBean.client.nom}">
+<h:inputText id="nom" value="#{loginBean.client.nom}" required="true"
+requiredMessage="Votre prénom!">
 </h:inputText>
 <h:outputText value="Prénom :">
 </h:outputText>
-<h:inputText id="prenom" value="#{loginBean.client.prenom}">
+<h:inputText id="prenom" value="#{loginBean.client.prenom}" required= "true"
+requiredMessage="Votre prénom!">
 
 
 
 </h:inputText>
+
 <h:outputText value="Mot de passe choisi:" >
 </h:outputText>
-<h:inputSecret id="passe" value="#{loginBean.client.motdepasse}">
+<h:inputSecret id="passe" value="#{loginBean.client.motdepasse}"
+validatorMessage="Mot de passe entrte 4 et 10 caractères avec au moins une lettre en Majuscule , et une lettre minuscule et un chiffre!" >
+
+<f:validatorRegex pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,10}"
+for="passe"></f:validatorRegex>
+>
 </h:inputSecret>
+
 <h:outputText value="Votre âge:" >
 </h:outputText>
-<h:inputText value="#{loginBean.client.age}">
+<h:inputText value="#{loginBean.client.age}" id="age"
+required="true"
+requiredMessage="Donnez votre âge"
+converterMessage="L'âge est un entier!">
+<f:converter converterId="javax.faces.Integer">
 </h:inputText>
 </h:panelGrid>
 <br/>
